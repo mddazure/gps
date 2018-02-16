@@ -1,0 +1,6 @@
+all:
+#	gcc -Wall -std=gnu99 gps3.c -o gps3 -rdynamic -liothub_client_mqtt_transport -lserializer -liothub_client -lumqtt -luamqp -laziotsharedutil -lcurl -lssl -lcrypto -lpthread -luuid -lm
+#	gcc -Wall -std=c99 gps3.c -o gps3 -rdynamic -liothub_client_mqtt_transport -liothub_client_amqp_transport -liothub_client -lumqtt -luamqp -laziotsharedutil -lserializer -lcurl -lssl -lcrypto -lpthread -luuid -lm
+
+#No warnings:
+	gcc -std=c99 gps3.c -o gps3 -rdynamic -liothub_client_mqtt_transport -liothub_client_amqp_transport -liothub_client -lumqtt -luamqp -laziotsharedutil -lserializer -lcurl -lssl -lcrypto -lpthread -luuid -lm
