@@ -249,7 +249,6 @@ void parse_nmea(char buffer[1024])
                                	        printf("mySat->Sat1.SatData.Snr %i\n",mySat->Sat1.SatData.Snr);
 
        	                                serialize(mySat);
-                                        strcat(iotMessage,destination);
                                         strcat(iotMessage,comma);
 
                	                }
