@@ -1,0 +1,2 @@
+start-stop-daemon -S -x ~/iotclient/gps6 -b
+watch "ps --sort -rss -eo pid,pmem,rss,vsz,comm | head -16"
